@@ -50,6 +50,19 @@ class TodoTile extends StatelessWidget {
                         ? TextDecoration.lineThrough
                         : TextDecoration.none),
               ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    GestureDetector(
+                      child: const Icon(
+                        Icons.edit,
+                      ),
+                      onTap: (){},
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

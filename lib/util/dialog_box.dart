@@ -31,7 +31,7 @@ class DialogBox extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  MyButton(text: "save",  onPressed: controller.text != "" ? onSave : ()=> const Center(child: Text("Please write a task"),)),
+                  MyButton(text: "save",  onPressed: onSave),
                   MyButton(text: "cancel", onPressed: onCancel),
                 ],
               ),
